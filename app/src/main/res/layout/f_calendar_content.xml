@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/f_calContent_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f5fb"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_calContent_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#52b3d9" />
+
+    <View
+        android:id="@+id/view_calContent_work"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view_calContent_title"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite" />
+
+    <View
+        android:id="@+id/view_calContent_overTime"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view_calContent_work"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite" />
+
+    <View
+        android:id="@+id/view_calContent_memo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_calContent_overTime"
+        android:layout_margin="15dp"
+        android:background="@color/colorWhite" />
+
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/img_calContent_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_calContent_title"
+        android:layout_alignStart="@+id/view_calContent_work"
+        android:src="@drawable/arrow_calendar_icon" />
+
+    <TextView
+        android:id="@+id/tx_calContent_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="2018.08.01"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tx_calContent_holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_calContent_select"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/tx_calContent_select"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/img_calContent_workIcon"
+        android:layout_width="18dp"
+        android:layout_height="17.5dp"
+        android:layout_alignStart="@+id/view_calContent_work"
+        android:layout_alignTop="@+id/view_calContent_work"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calendar_content_work" />
+
+    <TextView
+        android:id="@+id/tx_calContent_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_calContent_workIcon"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/img_calContent_workIcon"
+        android:gravity="center_vertical"
+        android:text="근무형태"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_calContent_work"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp">
+
+        <RadioGroup
+            android:id="@+id/rd_calContent_work"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tx_calContent_work_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_calContent_work"
+        android:layout_alignEnd="@+id/view_calContent_work"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:text="초기화"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tx_calContent_work_etc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_calContent_work"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/tx_calContent_work"
+        android:gravity="left"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:text="다른 일정 설정"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_calContent_overTime"
+        android:layout_width="18dp"
+        android:layout_height="17.5dp"
+        android:layout_alignStart="@+id/view_calContent_overTime"
+        android:layout_alignTop="@+id/view_calContent_overTime"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calendar_content_overtime" />
+
+    <TextView
+        android:id="@+id/title_calContent_overTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_calContent_overTime"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/img_calContent_overTime"
+        android:gravity="center_vertical"
+        android:text="오버타임"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tx_calContent_over_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title_calContent_overTime"
+        android:layout_alignEnd="@+id/view_calContent_overTime"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:text="초기화"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tx_calContent_overTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_calContent_overTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="00 : 00"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/img_calContent_memo"
+        android:layout_width="18dp"
+        android:layout_height="17.5dp"
+        android:layout_alignStart="@+id/view_calContent_memo"
+        android:layout_alignTop="@+id/view_calContent_memo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calendar_content_memo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_calContent_memo"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/img_calContent_memo"
+        android:gravity="center_vertical"
+        android:text="메모"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/img_calContent_memo"
+        android:layout_margin="15dp"
+        android:background="@color/colorWhite"
+        android:gravity="top"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <EditText
+            android:id="@+id/edi_calContent_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="메모를 입력해주세요"
+            android:textSize="12sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

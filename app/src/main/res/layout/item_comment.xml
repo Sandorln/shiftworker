@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_comment_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/rounded">
+
+    <TextView
+        android:id="@+id/item_comment_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="글쓴이 1"
+        android:textColor="#52b3d9"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/item_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_comment_author"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="4dp"
+        android:text="댓글 1 - 자라나라 머리머리"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_comment_createDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:text="2018.08.01"
+        android:textColor="#52b3d9"
+        android:textSize="11sp" />
+</RelativeLayout>

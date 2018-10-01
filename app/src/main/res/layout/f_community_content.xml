@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/a_community_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f5fb">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/community_content_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/board_createInfo_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/community_content_toolbar"
+        android:layout_margin="10dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/tx_board_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/board_createInfo_view"
+        android:layout_alignTop="@+id/board_createInfo_view"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="글쓴이"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tx_board_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/board_createInfo_view"
+        android:layout_alignStart="@+id/board_createInfo_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="15dp"
+        android:layout_toStartOf="@+id/img_viewCount_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="글 내용"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tx_board_createDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/board_createInfo_view"
+        android:layout_alignTop="@+id/board_createInfo_view"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:text="2018.08.01"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tx_board_viewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/board_createInfo_view"
+        android:layout_alignEnd="@+id/board_createInfo_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="17.5dp"
+        android:text="40"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_viewCount_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/board_createInfo_view"
+        android:layout_alignTop="@+id/tx_board_viewCount"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tx_board_viewCount"
+        android:src="@drawable/board_view_icon" />
+
+    <ScrollView
+        android:id="@+id/board_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/board_createInfo_view"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tx_board_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:lineSpacingExtra="2dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="상세 보기 창"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_board_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tx_board_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/community_menu_search"
+        android:icon="@drawable/board_search_icon"
+        android:title="search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/community_menu_write"
+        android:icon="@drawable/board_write_icon"
+        android:title="write"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/community_menu_login"
+        android:title="로그인"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/community_menu_logout"
+        android:title="로그아웃"
+        android:visible="false"
+        app:showAsAction="collapseActionView" />
+</menu>

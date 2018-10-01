@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentTop="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/year_pre"
+            android:gravity="center"
+            android:text="뒤"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/year_tx"
+            android:gravity="center"
+            android:text="1950"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/year_next"
+            android:gravity="center"
+            android:text="앞"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TableLayout
+        android:paddingBottom="10dp"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow android:weightSum="6">
+
+            <TextView
+                android:id="@+id/month_01"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_02"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_03"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_04"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_05"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_06"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6월"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow android:weightSum="6">
+
+            <TextView
+                android:id="@+id/month_07"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_08"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_09"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_10"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_11"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11월"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/month_12"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12월"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/move_today"
+        android:paddingTop="10dp"
+        android:text="오늘로"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_board_write_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_board_write_okay"
+        android:layout_margin="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="제목"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etx_board_write_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="left"
+                    android:hint="제목을 입력하세요"
+                    android:maxLines="1"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="내용"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent">
+
+                <EditText
+                    android:textSize="12sp"
+                    android:id="@+id/etx_board_write_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tx_board_write_okay"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/baseColor"
+        android:gravity="center"
+        android:text="글 작성"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/tx_board_write_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toStartOf="@+id/tx_board_write_okay"
+        android:background="#7c7c7c"
+        android:gravity="center"
+        android:text="취소"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

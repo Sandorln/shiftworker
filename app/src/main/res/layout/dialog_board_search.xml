@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_PostSearch"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/etx_dl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_dl_okay"
+        android:layout_alignStart="@+id/view_PostSearch"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_toStartOf="@+id/tx_dl_okay"
+        android:hint="검색어를 입력해주세요"
+        android:maxLines="1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tx_dl_okay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_PostSearch"
+        android:layout_alignEnd="@+id/view_PostSearch"
+        android:layout_alignTop="@+id/view_PostSearch"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/baseColor"
+        android:gravity="center"
+        android:inputType="textImeMultiLine"
+        android:text="검색"
+        android:textColor="@color/colorWhite" />
+
+    <RadioGroup
+        android:id="@+id/rg_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etx_dl_search"
+        android:layout_alignTop="@+id/tx_dl_okay"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_dl_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_dl_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</RelativeLayout>

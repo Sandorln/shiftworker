@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorChoice">#ffffb326</color>
+    <color name="colorRed">#ed1c24</color>
+    <color name="colorBlue">#2e3192</color>
+
+    <color name="colorAfter_bar">#33f9bf3b</color>
+    <color name="colorNight_bar">#3367809f</color>
+    <color name="colorRest_bar">#33f03434</color>
+
+    <color name="colorAfter_icon">#FFf9bf3b</color>
+    <color name="colorNight_icon">#FF67809f</color>
+    <color name="colorRest_icon">#FFf03434</color>
+    <color name="color1">#FF7d7d7d</color>
+    <color name="color2">#663399</color>
+    <color name="color3">#00b16a</color>
+    <color name="color4">#f9690e</color>
+    <color name="color5">#1f3a93</color>
+    <color name="colorTest">#FF666666</color>
+
+    <color name="baseColor">#52b3d9</color>
+</resources>

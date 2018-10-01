@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_board_login_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/img_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/loading_img" />
+
+
+    <TableLayout
+        android:id="@+id/table_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_login_logo">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="ID"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etx_login_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:hint="아이디(5~10글자)"
+                android:inputType="textImeMultiLine"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:privateImeOptions="defaultInputmode=english"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="PASSWORD"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etx_login_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:hint="비밀번호(10~20글자)"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_checkPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="CHECK PASSWORD"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etx_login_checkPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:hint="비밀번호 입력"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tx_login_okay"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/table_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/baseColor"
+        android:gravity="center"
+        android:text="로그인"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ck_login_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_login_okay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="아이디 만들기"
+        android:textColor="@color/color1"
+        android:textSize="14sp" />
+
+</RelativeLayout>
